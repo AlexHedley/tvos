@@ -29,7 +29,7 @@
 
         <section class="jumbotron title-container text-center">
             <div>
-                <i class="fab fa-apple"></i> <h1>tvOS Apps</h1>
+                <h1><i class="fab fa-apple"></i> tvOS Apps</h1>
 
                 <div class="row justify-content-md-center">
                     <div class="col-lg-8">
@@ -79,7 +79,7 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div ng-repeat="app in apps" class="carousel-item" ng-class='{active:$first}'>
-                                    <img src="/ios/{{app.image}}" class="d-block w-100" alt="{{app.name}}">
+                                    <img src="/tvos/{{app.image}}" class="d-block w-100" alt="{{app.name}}">
                                     <div class="carousel-caption d-none d-md-block">
                                         <h5>{{app.name}}</h5>
                                         <p>{{app.description}}</p>
@@ -108,7 +108,7 @@
                         style="margin-bottom: 50px;"
                     >
                         <div class="card" style="width: 18rem;" data-id="{{app.id}}">
-                            <img ng-if="app.image.length > 0" ng-src="/ios/{{app.image}}" class="card-img-top" alt="{{app.name}}">
+                            <img ng-if="app.image.length > 0" ng-src="/tvos/{{app.image}}" class="card-img-top" alt="{{app.name}}">
                             <div class="card-header">
                                 <a ng-href="{{app.details}}.html">{{app.name}}</a>
                             </div>
